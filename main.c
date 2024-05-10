@@ -16,6 +16,7 @@ int main(){
         printf("5 - Depósito\n");
         printf("6 - Extrato\n");
         printf("7 - Transferência entre contas\n");
+        printf("8 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d",&opcao);
     switch (opcao)
@@ -42,6 +43,9 @@ int main(){
     case 7:
         resultado = op[6](clientes, &pos);
         break;
+    case 8:
+        printf("Sair\n");
+        return 0;
 
     default:
         printf("OPÇÂO INVALIDA\n\n");
