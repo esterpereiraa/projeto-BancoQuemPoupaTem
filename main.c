@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include "banco.h"
 
 int main(){
-
+    funcao op[] = {novoContato, apagaContato, listarContatos, debito, deposito, extrato,                     transferencia,salvar,carregar};
+    Banco clientes[TOTAL];
+    int pos = 0;
+    RESULTADOS resultado = op[8](clientes, &pos);
     while(1){
         int opcao;
         printf("\nMENU PRINCIPAL\n");
@@ -18,31 +22,31 @@ int main(){
 
     {
     case 1:
-        printf("Novo cliente\n");
+        resultado = op[0](clientes, &pos);
         break;
      case 2:
-        printf("Apagar cliente\n");
+        resultado = op[1](clientes, &pos);
         break;
     case 3:
-        printf("Listar clientes\n");
+        resultado = op[2](clientes, &pos);
         break;
     case 4:
-        printf("Débito\n");
+        resultado = op[3](clientes, &pos);
         break;
     case 5:
-        printf("Depósito\n");
+        resultado = op[4](clientes, &pos);
         break;
     case 6:
-        printf("Extrato\n");
+        resultado = op[5](clientes, &pos);
         break;
     case 7:
-        printf("Transferência entre contas\n");
-        return 0; 
+        resultado = op[6](clientes, &pos);
+        break;
 
     default:
         printf("OPÇÂO INVALIDA\n\n");
         break;
+    }  
     }
-    }
-
+     return 0;
 }
