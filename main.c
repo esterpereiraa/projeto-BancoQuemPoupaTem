@@ -2,7 +2,7 @@
 #include "banco.h"
 
 int main(){
-    funcao op[] = {novoContato, apagaContato, listarContatos, debito, deposito, extrato,                     transferencia,salvar,carregar};
+    funcao op[] = {novoContato, apagaContato, listarContatos, debito, deposito, extrato, transferencia, salvar, carregar};
     Banco clientes[TOTAL];
     int pos = 0;
     RESULTADOS resultado = op[8](clientes, &pos);
@@ -24,6 +24,7 @@ int main(){
     {
     case 1:
         resultado = op[0](clientes, &pos);
+           
         break;
      case 2:
         resultado = op[1](clientes, &pos);
