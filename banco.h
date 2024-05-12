@@ -1,30 +1,32 @@
 #define TOTAL 1000
+#define OP_FEITAS 100
 
 typedef struct{
 
       char nome [20];
       int cpf [11];
       char conta [5];
-      float saldo [10];
+      double saldo [15];
       char senha [12];
 } Banco;
 
 typedef enum{
   OK,
-  MAX_CONTATO,
-  SEM_CONTATO, ARQUIVO_NAO_ENCONTRADO, 
+  MAX_CLIENTES,
+  SEM_CLIENTES, ARQUIVO_NAO_ENCONTRADO, 
   ABRIR, 
   FECHAR, 
-  LER } RESULTADOS;
+  LER,
+  ESCREVER} RESULTADOS;
 
 typedef RESULTADOS (*funcao)(Banco[], int *);
 
-RESULTADOS novoContato(Banco[], int *pos);
-RESULTADOS apagaContato(Banco[], int *pos);
-RESULTADOS listarContatos(Banco[], int *pos);
-RESULTADOS debito(Banco[], int *pos);
-RESULTADOS deposito(Banco[], int *pos);
-RESULTADOS extrato(Banco[], int *pos);
-RESULTADOS transferencia(Banco[], int *pos);
-RESULTADOS salvar(Banco[], int *pos);
-RESULTADOS carregar(Banco[], int *pos);
+RESULTADOS novoContato(Banco clientes[], int *pos);
+RESULTADOS apagaContato(Banco clientes[], int *pos);
+RESULTADOS listarContatos(Banco clientes[], int *pos);
+RESULTADOS debito(Banco clientes[], int *pos);
+RESULTADOS deposito(Banco clientes[], int *pos);
+RESULTADOS extrato(Banco clientes[], int *pos);
+RESULTADOS transferencia(Banco clientes[], int *pos);
+RESULTADOS salvar(Banco clientes[], int *pos);
+RESULTADOS carregar(Banco clientes[], int *pos);
