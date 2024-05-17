@@ -1,6 +1,6 @@
 # Projeto 4 - BancoQuemPoupaTem
 *Quarto projeto da disciplina de desenvolvimento de algoritmos: Banco Quem Poupa Tem*
-(NAO FINALIZADO)
+
 ## Objetivo do projeto
 - Criar com até 1000 clientes e as informações das últimas 100 operações (depósito, saque, transferência) realizada pelo cliente
 ## Funcionalidades
@@ -33,7 +33,8 @@
    -  Transferência Entre Contas
     
   -  Sair
- 
+    
+ - (NAO FINALIZADO)
   ## Como pode ser compilado e executado
 - Programa criado em C
 - Para compilar é necessario que uma IDE que compile códigos em C com a biblioteca `string.h` e para executar é necessário utilzar o comando `gcc *.c && ./a.out `
