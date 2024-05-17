@@ -1,5 +1,6 @@
 # Projeto 4 - BancoQuemPoupaTem
 *Quarto projeto da disciplina de desenvolvimento de algoritmos: Banco Quem Poupa Tem*
+(NAO FINALIZADO)
 ## Objetivo do projeto
 - Criar com até 1000 clientes e as informações das últimas 100 operações (depósito, saque, transferência) realizada pelo cliente
 ## Funcionalidades
